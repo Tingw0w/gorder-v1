@@ -4,6 +4,7 @@ package orderpb;
 option go_package = "github.com/Tingw0w/gorder-1/internal/common/genproto/orderpb";
 // rpc 接口
 import "google/protobuf/empty.proto";
+
 service OrderService {
   rpc CreateOrder(CreateOrderRequest) returns (google.protobuf.Empty);
   rpc GetOrder(GetOrderRequest) returns (Order);
